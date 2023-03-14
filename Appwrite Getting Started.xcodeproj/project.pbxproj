@@ -13,6 +13,7 @@
 		4E71279329C10DE900680843 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E71278129C10DE900680843 /* ContentView.swift */; };
 		4E71279429C10DE900680843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E71278229C10DE900680843 /* Assets.xcassets */; };
 		4E71279529C10DE900680843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E71278229C10DE900680843 /* Assets.xcassets */; };
+		4E7127A029C110F300680843 /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = 4E71279F29C110F300680843 /* Appwrite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7127A029C110F300680843 /* Appwrite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = "Appwrite Getting Started (iOS)";
+			packageProductDependencies = (
+				4E71279F29C110F300680843 /* Appwrite */,
+			);
 			productName = "Appwrite Getting Started (iOS)";
 			productReference = 4E71278729C10DE900680843 /* Appwrite Getting Started.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 4E71277A29C10DE800680843;
+			packageReferences = (
+				4E71279E29C110F300680843 /* XCRemoteSwiftPackageReference "sdk-for-apple" */,
+			);
 			productRefGroup = 4E71278829C10DE900680843 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -444,6 +452,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E71279E29C110F300680843 /* XCRemoteSwiftPackageReference "sdk-for-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appwrite/sdk-for-apple";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E71279F29C110F300680843 /* Appwrite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E71279E29C110F300680843 /* XCRemoteSwiftPackageReference "sdk-for-apple" */;
+			productName = Appwrite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4E71277B29C10DE800680843 /* Project object */;
 }
